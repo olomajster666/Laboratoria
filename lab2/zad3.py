@@ -3,19 +3,14 @@ x = int(input("podaj pierwszy argument: "))
 y = int(input("podaj drugi argument: "))
 
 if o == 1:
-    w = x+y
-    print("wynik: ",w)
+    print("wynik: ",x+y)
 elif o == 2:
-    w = x-y
-    print("wynik: ",w)
+    print("wynik: ",x-y)
 elif o == 3:
-    w = x*y
-    print("wynik: ", w)
+    print("wynik: ", x*y)
 elif o == 4:
-    w = x/y
-    print("wynik: ", w)
+    print("wynik: ", x/y)
 elif o == 5:
-    w = x**y
-    print("wynik: ", w)
+    print("wynik: ", x**y)
 else:
     print("błędny argument operacji")
