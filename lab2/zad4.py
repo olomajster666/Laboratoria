@@ -1,2 +1,1 @@
-x = input("podaj litere do zmiany rozmiaru: ")
-print(x.swapcase())
+print(input("podaj litere do zmiany rozmiaru: ").swapcase())
