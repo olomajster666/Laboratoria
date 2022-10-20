@@ -7,7 +7,6 @@ o = int(input('''Jaką operację chcesz wykonać?
 '''))
 x = float(input("podaj pierwszy argument: "))
 y = float(input("podaj drugi argument: "))
-
 if o > 5 or o < 0:
     print("błędny argumant operacji")
     exit()
