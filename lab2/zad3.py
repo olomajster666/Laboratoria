@@ -17,7 +17,11 @@ elif o == 2:
 elif o == 3:
     print("wynik: ", x*y)
 elif o == 4:
-    print("wynik: ", x/y)
+    if y == 0:
+        print("nie mozna dzielic przez zero")
+        exit()
+    else:
+        print("wynik: ", x/y)
 elif o == 5:
     print("wynik: ", x**y)
 
