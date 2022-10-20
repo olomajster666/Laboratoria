@@ -1,7 +1,12 @@
 x = input("podaj litere: ")
-if x>"Z":
+if len(x) > 1 or len(x) == 0:
+    print("Niepoprawne dane")
+    exit()
+if x >= 'a' and x <= 'z':
     print("mala litera")
-else:
+elif 'A' <= x <= 'Z':
     print("duza litera")
+else:
+    print("pozostałe znaki")
 
 
