@@ -20,8 +20,7 @@ elif o == 4:
     if y == 0:
         print("nie mozna dzielic przez zero")
         exit()
-    else:
-        print("wynik: ", x/y)
+    print("wynik: ", x/y)
 elif o == 5:
     print("wynik: ", x**y)
 
