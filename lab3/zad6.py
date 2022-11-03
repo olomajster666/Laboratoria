@@ -1,14 +1,13 @@
 n = int(input("podaj liczbe studentow: "))
-x = 0
+x = 1
 s = 0
 while True:
-    z=int(input("podaj liczbe punktow studenta: "))
-    x=x+1
-    s =s+z
-    if z>100 or z<0:
-        break
-    elif x>=n:
-        break
-    else:
+    p=int(input(f"podaj liczbe punktow studenta {x}: "))
+    if p > 100 or p < 0:
         continue
-print("srednia punktow wynosi:", s/n )
+    x=x+1
+    s =s+p
+    if (n+1==x):
+        break
+
+print("srednia punktow wynosi:", round(s/n,2) )
