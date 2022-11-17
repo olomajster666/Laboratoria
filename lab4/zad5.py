@@ -1,30 +1,31 @@
 import random
-punkty=[]
-x= 0
-for x in range(15):
-    punkty.append(round(random.uniform(0, 50),2))
+punkty = []
+n = 15
+for i in range(n):
+    p = random.uniform(0, 50)
+    punkty.append(round(p, 2))
+print()
 print(punkty)
-z=float(input('podaj szukana liczbe: '))
-if z in punkty:
-    print(z)
+print(f'min = {min(punkty)}')
+print(f'max = {max(punkty)}')
+avg = round(sum(punkty)/len(punkty), 2)
+print('avg = ', avg)
+p = float(input('Podaj liczbę punktów: '))
+if p in punkty:
+    print(punkty.index(p))
 else:
-    print('nie wystapuje taka iloc puntkow')
-avg = round(sum(punkty)/len(punkty),2)
-print('srednia listy to ',avg)
-
-print('max punkty to: ',max(punkty))
-print('min punkty to: ',min(punkty))
-n=0
-punkty_2 =[]
+    print(f'liczba {p} punktów nie występuje na liście')
+print()
+punkty_w = []
+punkty_m = []
 for i in range(n):
-    if punkty[i]>avg:
-        punkty_2.append(i)
+    if punkty[i] > avg:
+        punkty_w.append(punkty[i])
+    if punkty[i] < avg:
+        punkty_m.append(punkty[i])
+print("ilosc powyzej sredniej: ", len(punkty_w))
+print("ilosc ponizej sredniej: ", len(punkty_m))
 
-punkty_3 =[]
-for i in range(n):
-    if punkty[i]<avg:
-        punkty_3.append(i)
 
-print('powyzej sredniej: ',punkty_2)
-print('ponizej sredniej: ',punkty_3)
+
 

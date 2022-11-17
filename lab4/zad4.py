@@ -13,3 +13,4 @@ imiona.insert(0,'grzegorz')
 
 x = input('podaj imie do usuniecia z listy: ')
 imiona.remove(x)
+
